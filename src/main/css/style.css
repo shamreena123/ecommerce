@@ -1,0 +1,361 @@
+#shipping{
+    background-color: black;
+    width: 100%;
+    /* height: 20px; */
+    min-height: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    /* position: fixed;
+    top: 0px;
+    left: 0px; */
+    text-align: center;
+}
+
+.navv{
+    display: inline-block;
+}
+
+#menu{
+    text-align: left;
+    height: 2cm;
+    /* position: fixed;
+    left: 0px; */
+    height: 2cm;
+} 
+#arooush{
+    text-align: center;
+    width: 300px;
+    height: 25px;
+    /* margin-left: 1cm; */
+    font-family:cursive;
+}
+
+#image{
+    padding-top: 25px;
+    width:100%;
+    height: 2cm;
+}
+#icons{
+    text-align: right;
+    height: 2cm;
+
+} 
+#user{
+    height: 2cm;
+    width: 2cm;
+    padding-left: 0.5cm;
+}
+
+#search{
+    height: 2cm;
+    width: 2cm;
+    padding-left: 0.5cm;
+}
+
+#cart{
+    height: 2cm;
+    width: 2cm;
+    padding-left: 0.5cm;
+}
+
+.container {
+    text-align: center;  
+    height: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    height: min-content;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+.child {
+    display: inline-block;
+    width: 30%;
+    height: 40px;
+    /* background-color: blue; */
+    color: black;
+    line-height: 100px;
+}
+
+
+/* WOMEN,MEN,BOYS,GIRLS NAV BAR */
+
+.gender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gender-item {
+    width: 10%; 
+    padding: 5px;
+    color: black;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    transition: border-bottom 0.3s ease-in-out;
+}
+.gender-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px; 
+    background-color: black;
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gender-item:hover::before {
+    transform: scaleX(1); /* Expand the border to full width when hovered */
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* SLIDESHOW */
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* Style for the images in the slideshow */
+.mySlides {
+    display: none;
+    width: fit-content;
+}
+
+#imageSlider .carousel-inner .carousel-item img {
+    /* width: 100%;
+    height: 400px; */
+    /* object-fit: cover; */
+width: 100%;
+height: 500px;
+}
+
+/* Style for the previous and next buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Style for the dots below the slideshow */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+
+/* GRAB YOUR JUTTI */
+
+#grab{
+    margin-top: 20px;
+    color: black;
+    min-width: 100%;
+    max-height: fit-content;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* JUTTI PICS OF WOMEN,MEN.. */
+
+.jutti-pics {
+    display: flex; /* Create a flex container */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align items vertically in the center */
+    margin: 40px;
+}
+
+.box {
+    width: 24%; /* Each box takes up 24% of the container width */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.box img {
+    box-sizing: border-box;
+    max-width: 90%; /* Ensure images fit within their containers */
+}
+.box:hover{
+    transform: scale(1.2);
+}
+
+/* FOOTER STYLING */
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 28px;
+    height: 300px;
+    align-content: center;
+}
+
+/* Styling for the columns within the footer */
+.footer-column {
+    width: 28%; /* Each column takes up 33.33% of the footer width */
+    display: inline-block;
+    text-align: center;
+    margin: 25px;
+}
+
+/* input{
+    border: 1px solid black;
+    padding:12px ;
+    height: 10px;
+} */
+
+#gmail{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#submit{
+    width: 100%;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -100%; 
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: var(--bg-color);
+    box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
+    border: 1px solid var(--main-color);
+    transition: 1.5s;
+}
+.cart.active{
+    right: 0;
+    transition: .5s;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: .5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: .5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--sec-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    background-color: var(--text-color);
+}
+#cart-close{
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
